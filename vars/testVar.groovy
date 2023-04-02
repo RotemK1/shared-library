@@ -1,3 +1,5 @@
 def call(String name){
-    echo "Building ${name}..."
+
+    
+    sh "echo Building ${name}..."
 }
