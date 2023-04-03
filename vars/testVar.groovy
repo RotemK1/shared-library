@@ -1,5 +1,5 @@
 def call(Map config = [:]){
     sh "echo hello ${config.name}"
-    loadScript(name: 'hello-world.sh')
+    loadScript(name: "${config.script}")
     sh "./hello-world.sh ${config.name}"
 }
