@@ -6,7 +6,7 @@ def call(Map config = [:]){
                 steps {
                     script{
 
-                        justEcho(build: "${config.build}")
+                        justEcho "${config.build}"
                     }
                 }
             }
