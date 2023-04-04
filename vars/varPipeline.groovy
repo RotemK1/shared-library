@@ -4,7 +4,7 @@ def call(Map config = [:]){
         stages {
             stage('Build') {
                 steps {
-                    justEcho(build: ${config.build})
+                    justEcho(build: "${config.build}")
                 }
             }
         }
