@@ -3,5 +3,6 @@ def call(Map config = [:]){
     sh "echo $config"
     scriptcontents = scriptcontents.replace('<REP-ONE>',"${config.replacement}")
     writeFile file: "${config.name}", text: scriptcontents
+    sh "ls"
     sh "cat ${config.name}"
 }
