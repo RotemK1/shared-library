@@ -5,8 +5,8 @@ def call(Map config = [:]){
             stage('Build') {
                 steps {
                     script{
-
-                        justEcho "${config.build}"
+                        
+                        justEcho(currentBuild.getNumber())
                     }
                 }
             }
